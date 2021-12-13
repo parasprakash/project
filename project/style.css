@@ -1,0 +1,165 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper,html,body{
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    /* background-color: red; */
+}
+.wrapper{
+background: rgb(248, 162, 162);
+}
+.wrapper>header{
+    margin: 5px;    
+    background: rgb(207, 207, 236);
+    display: flex;
+    font-size: xx-large;
+    padding: 20px;
+    flex-direction: row;
+    border-bottom: 4px solid grey;
+}
+.wrapper main{
+    background-color: rgb(204, 249, 255);
+    height: 100%;
+    display: flex;
+}
+.wrapper footer{
+    background-color: rgb(61, 53, 53);
+    margin-top: auto;
+    text-align: center;
+}
+.wrapper header .heading{
+    font-size: 3rem;
+    font-weight: 900;
+    
+ 
+}
+.wrapper>header .plus{
+    background-color: rgb(16, 235, 143);
+    /* display: flex; */
+    margin-left: auto;
+    /* padding: 10px; */
+    width: 50px;
+    height: 50px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    font-size: x-large;
+}
+.wrapper>header .plus:hover{
+    transform: scale(.9);
+}
+.wrapper main{
+    display: flex;
+}
+.wrapper .box{
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(242, 210, 247);
+    border: 1px solid blue;
+    border-radius: 5%;
+    margin: 10px;
+}
+ .box-header{
+    display: flex;
+    border-bottom: 1px solid blue;
+    justify-content: flex-end;
+
+}
+.wrapper main .box .box-header .box-heading{
+    color: white;
+    margin-left: 10px;
+    font-size: x-large;
+    line-height: 50px;
+    margin-right: auto;
+}
+.box .box-header div.icon{
+    color: azure;
+    background-color: rgb(21, 150, 107);
+    margin-left: auto;
+    border-radius: 50%;
+    
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 10px;
+    line-height: 30px;
+    
+}
+.box main{
+    height: 00px;
+    width: 300px;
+}
+.box  textarea{
+    margin-top: 20px;
+    height:200px;
+    width:250px;
+    margin-left: 20px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.dialog{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.dialog .dialog-box{
+    height: 400px;
+    width: 500px;
+    background: rgb(203, 44, 218);
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+.dialog .dialog-box header{
+    background-color: rgb(112, 112, 241);
+    padding: 10px;
+    width: 496px;
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 2px solid black;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+}
+.dialog-box main{
+    margin-top: 50px;
+    position: relative;
+}
+.dialog .dialog-box div input,
+.dialog .dialog-box div textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.dialog .dialog-box div,.dialog .dialog-box div input,
+.dialog .dialog-box div textarea {
+    padding: 10px;
+    width:100%;
+}
+.dialog .dialog-box header .close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: rgb(245, 10, 10);
+}
+.dialog .dialog-box header .close:hover{
+    transform: scale(.9);
+}

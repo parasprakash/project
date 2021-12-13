@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+main{
+    height: 100%;
+    display: grid;
+    grid-template: repeat(12,lfr)/repeat(12,lfr);
+}
+main>div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    grid-column: 1/-1;
+    background: tomato;
+}
+.sidebar{
+    grid-row: 2/12;
+    background: violet;
+}
+.footer{
+    grid-row: 12/13;
+    grid-column: 1/-1;
+    /*grid-area: f;*/
+    background: turquoise;
+}
+.content{
+    grid-column: 2/-1;
+    grid-row: 2/-2;
+    background: red;
+}

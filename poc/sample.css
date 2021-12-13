@@ -1,0 +1,21 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: blueviolet;
+}
+.headings{
+    background-color: brown;
+    font-size: 2rem;
+}
+.list{
+    background-color: aqua;
+    font-style: italic;
+}
+.list2{
+    background-color: green;
+}
+#image{
+    margin-left: 20rem;
+    height: 400px;
+}

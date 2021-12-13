@@ -1,0 +1,17 @@
+.blocks{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: bisque;
+}
+.image{
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+.inner{
+    display: inline-block;
+}
+.outer{
+    display: inline-block;
+}
