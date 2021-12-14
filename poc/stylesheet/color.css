@@ -22,8 +22,22 @@ html,body{
     border: 3px solid grey;
     line-height: 30px;
     border-radius: 10px;
-    color: yellow;
+    color: rgb(247, 247, 223);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgb(72, 211, 221);
+}
+.header button:hover{
+    transform: scale(.9);
+}
+.header .head{
+    font-size: 2rem;
+    margin: 10px;
+    color: brown;
+    font-weight: bold;
+    /* position:absolute; */
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
 }
 .header .blue{
     background-color: blue;
@@ -38,16 +52,20 @@ html,body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 50px;
-
+    background-color: rgb(158, 187, 226);
+    height:fit-content;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0px 10px;
 }
 .box div{
     margin: 30px;
     flex-wrap: wrap;
-    width: 40px;
-    height: 40px;
+    color: yellow;
+    width: 50px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 50%;
-    line-height: 35px;
+    line-height: 50px;
     text-align: center;
 }
