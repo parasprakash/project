@@ -14,8 +14,7 @@ function setcolor(e){
 }
 
 function blue(e){
-    for (let index = 0; index < setColorarr.length; index++) {
-        setColorarr[index].style.display="block"
+    for (let index = 0; index < setColorarr.length; index++) {  
         if(setColorarr[index].style.background!="blue"){
             setColorarr[index].style.display="none"
         }
@@ -42,13 +41,19 @@ function red(e){
         
     }
 }
+function one(e){
+    for (let index = 0; index < setColorarr.length; index++) {
+        // e.target.getAttribute("class","blue")
+        // setAttribute
+    }
+}
 
 function reset(e){
     for (let index = 0; index < setColorarr.length; index++) {
         setColorarr[index].style.display="block"        
     }
 }
-bluebtn.addEventListener("click",blue)
-greenbtn.addEventListener("click",green)
-redbtn.addEventListener("click",red)
+bluebtn.addEventListener("click",one)
+greenbtn.addEventListener("click",one)
+redbtn.addEventListener("click",one)
 resetbtn.addEventListener("click",reset)

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height:100%;
+            width: 100%;
+        }
+        .one{
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .two{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            left: 20px;
+            top: 20px;
+            background-color: violet;
+            /* z-index: -1; */
+        }
+        .container{
+            margin-left: 400px;
+            margin-top: 100px;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: white;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            border-radius: 0px 0px 5px 5px;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid green;
+            border-radius: 5px;
+            left: 0px;
+            bottom: 0px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"><div class="two"></div></div>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+<script>
+    var btn=document.querySelector(".box")
+    var mousePosition;
+    var offset = [0,0];
+    function position(e){
+        mousePosition = {
+
+    x : event.clientX,
+    y : event.clientY,
+        btn.target.style.left = (mousePosition.x + offset[0]) + 'px';
+        btn.style.top  = (mousePosition.y + offset[1]) + 'px';
+};
+    }
+btn.addEventListener("mouseenter",position)
+</script>
+</html>
